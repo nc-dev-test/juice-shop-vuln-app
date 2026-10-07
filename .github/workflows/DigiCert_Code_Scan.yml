@@ -7,5 +7,6 @@ jobs:
       - name: Run DigiCert Code Scan composite action
         uses: digicert/digicert-code-monitoring-action@master
         with:
-          host: https://one.stage.az.digicert.net
+          env: stage
+          region: us
           api-key: ${{ secrets.DIGICERT_BACKEND_API_KEY }}
